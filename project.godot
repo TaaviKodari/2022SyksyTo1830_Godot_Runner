@@ -14,6 +14,12 @@ config/name="2022SyksyTo1830_Runner"
 run/main_scene="res://Main.tscn"
 config/icon="res://icon.png"
 
+[global]
+
+"Main Scene"=false
+Scene=false
+main_scene=false
+
 [gui]
 
 common/drop_mouse_on_gui_input_disabled=true
