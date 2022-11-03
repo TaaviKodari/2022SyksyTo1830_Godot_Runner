@@ -5,56 +5,34 @@
 
 [node name="RoadStart" instance=ExtResource( 1 )]
 
-[node name="Grass" parent="." index="0"]
-material/0 = null
-
-[node name="Sand" parent="Grass" index="0"]
-material/0 = null
-
 [node name="lowpolytree" type="MeshInstance" parent="." index="1"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8.79747, 2.32737, -5.40235 )
 mesh = ExtResource( 2 )
-material/0 = null
-material/1 = null
 
 [node name="lowpolytree2" type="MeshInstance" parent="." index="2"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8.79747, 2.32737, -14.6394 )
 mesh = ExtResource( 2 )
-material/0 = null
-material/1 = null
 
 [node name="lowpolytree3" type="MeshInstance" parent="." index="3"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8.79747, 2.32737, -26.488 )
 mesh = ExtResource( 2 )
-material/0 = null
-material/1 = null
 
 [node name="lowpolytree4" type="MeshInstance" parent="." index="4"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8.79747, 2.32737, -42.8226 )
 mesh = ExtResource( 2 )
-material/0 = null
-material/1 = null
 
 [node name="lowpolytree5" type="MeshInstance" parent="." index="5"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.20253, 2.32737, -42.8226 )
 mesh = ExtResource( 2 )
-material/0 = null
-material/1 = null
 
 [node name="lowpolytree6" type="MeshInstance" parent="." index="6"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.20253, 2.32737, -31.5233 )
 mesh = ExtResource( 2 )
-material/0 = null
-material/1 = null
 
 [node name="lowpolytree7" type="MeshInstance" parent="." index="7"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.20253, 2.32737, -20.2047 )
 mesh = ExtResource( 2 )
-material/0 = null
-material/1 = null
 
 [node name="lowpolytree8" type="MeshInstance" parent="." index="8"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.20253, 2.32737, -7.42024 )
 mesh = ExtResource( 2 )
-material/0 = null
-material/1 = null
