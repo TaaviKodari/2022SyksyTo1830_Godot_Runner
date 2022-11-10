@@ -5,11 +5,13 @@ var jump_length : float = 5.5
 var jump_height : float = 2.0
 
 onready var player = $Player
+onready var camera_pivot = $Camera_Pivot
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	player.setup_jump(jump_length, jump_height, run_speed)
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func _physics_process(delta):
+	camera_pivot.translation = player.translation
+	camera_pivot.translation.y = 0
