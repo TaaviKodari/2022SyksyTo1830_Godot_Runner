@@ -19,11 +19,21 @@ func _ready():
 	randomize()
 	for i in range(initial_road_count):
 		var road = make_random_road()
-		road.translation.z = -(i+1) * 50
+		road.translation.z = -(i+1) * RoadBase.LENGTH
 		add_child(road)
 
 
 func _physics_process(delta):
+	if player.translation.z < -RoadBase.LENGTH:
+		player.translation.z += RoadBase.LENGTH
+		
+		for child in get_children():
+			var road = child as RoadBase
+			if road:
+				road.translation.z += RoadBase.LENGTH
+				if road.translation.z > RoadBase.LENGTH:
+					road.queue_free() 
+		
 	camera_pivot.translation = player.translation
 	camera_pivot.translation.y = 0
 
